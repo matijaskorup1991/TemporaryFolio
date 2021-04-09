@@ -5,6 +5,13 @@
   src: url("./Athene.otf");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* font-family: "Open Sans", sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: myFont;
@@ -17,6 +24,10 @@ header {
   width: 100%;
   color: #282b29;
   display: flex;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 header > p {
@@ -62,4 +73,198 @@ header > p:nth-of-type(2) {
 
 #hero span {
   font-weight: bold;
+}
+
+#release {
+  background-color: #f4c4c4;
+  padding-top: 10vh;
+  padding-right: 10%;
+}
+
+#release h2,
+#end h2 {
+  font-size: 8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#release h2:nth-of-type(2),
+#end h2:nth-of-type(2) {
+  margin-top: 0;
+}
+
+#release > span {
+  padding-left: 10%;
+}
+
+#release > article > aside {
+  width: 40%;
+  position: relative;
+  left: 55%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#release > article > aside > p {
+  padding-left: 15%;
+  line-height: 40px;
+  padding-bottom: 10%;
+}
+
+#release > article > aside > div {
+  display: flex;
+  position: relative;
+}
+
+#release h3 {
+  text-align: right;
+  border-bottom: 1px solid black;
+}
+
+.numer.heading.content {
+  height: 15vh;
+  max-height: 15vh;
+}
+
+.numer {
+  width: 10%;
+  border-bottom: 1px solid black;
+  line-height: 15vh;
+}
+.heading {
+  width: 70%;
+  border-bottom: 1px solid black;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-weight: bold;
+  line-height: 15vh;
+}
+.content {
+  width: 20%;
+  border-bottom: 1px solid black;
+  font-size: 1em;
+  padding-top: 40px;
+}
+
+#lets-work-img {
+  text-align: right;
+  padding: 10vh 0;
+}
+
+#lets-work-img > img {
+  width: 15%;
+  height: 15%;
+}
+
+#works {
+  background-color: #deb873;
+  color: #7d2222;
+  padding-left: 10%;
+}
+
+#works > span {
+  padding-right: 10%;
+  padding-top: 10%;
+  display: block;
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+#works h2 {
+  text-align: right;
+  font-size: 8em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#works p {
+  width: 40%;
+  line-height: 35px;
+}
+
+#works > article {
+  margin: 20vh 0;
+  padding-right: 10%;
+  height: 60vh;
+}
+#works > article:last-of-type {
+  margin: 0;
+}
+
+#works > article:nth-of-type(1) {
+  background: url("../img/bg-marconatto-1.jpg") no-repeat right;
+  background-size: 50% 70%;
+  background-position: 60% 8%;
+}
+
+#works > article > div > h3 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#works > article:nth-of-type(2) {
+  background: url("../img/kathe_cover-1.jpg") no-repeat left;
+  background-size: 50% 70%;
+  background-position: 0% 8%;
+}
+
+#works > article:nth-of-type(2) h3,
+#works > article:nth-of-type(4) h3 {
+  text-align: right;
+}
+
+#works > article:nth-of-type(3) {
+  background: url("../img/bg-nicole-1.jpg") no-repeat right;
+  background-size: 50% 70%;
+  background-position: 60% 8%;
+}
+
+#works > article:nth-of-type(4) {
+  background: url("../img/boa_cover-1.jpg") no-repeat left;
+  background-size: 50% 70%;
+  background-position: 0% 8%;
+}
+
+#end {
+  background-color: #efe8d7;
+  color: #1d8883;
+}
+
+#end span {
+  padding: 10% 0 5% 10%;
+  display: block;
+}
+
+#end h4,
+#end ul {
+  font-family: "Open Sans", sans-serif;
+}
+
+#end h4 {
+  font-size: 2em;
+}
+
+#end div {
+  width: 25%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 41px 0 40px 0;
+  margin: 0;
+}
+
+li {
+  padding-right: 20px;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #1d8883;
+}
+a:hover {
+  text-decoration: underline;
 }
