@@ -1,264 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200&family=Special+Elite&display=swap");
+/* Farben: #002a5a, #efe8d7, #F4C4C4, #282b29, #7d2222, #DEB873, #D2D2D2, #1d8883 */
 
-/* Farbe: #000, #fff; */
-/* font-family: 'Exo', sans-serif;
-font-family: 'Special Elite', cursive; */
+@font-face {
+  font-family: myFont;
+  src: url("./Athene.otf");
+}
 
 body {
   margin: 0;
+  font-family: myFont;
 }
 
-ul {
-  list-style-type: none;
-  font-family: "Special Elite", cursive;
-  text-align: right;
-}
-
-li {
-  display: inline-block;
-  padding: 1% 2% 1% 1%;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-nav {
-  background-color: #fff;
+header {
+  border-bottom: 2px solid #002a5a;
   position: fixed;
-  width: 100%;
   top: 0;
-  z-index: 1;
+  width: 100%;
+  color: #282b29;
+  display: flex;
 }
 
-article {
-  padding: 0 10vw;
+header > p {
+  width: 50%;
+  font-size: 0.8em;
+}
+
+header > p:nth-of-type(1) {
+  text-align: left;
+  padding-left: 10%;
+}
+header > p:nth-of-type(2) {
+  text-align: right;
+  padding-right: 10%;
 }
 
 #hero {
-  background: url("../img/bg.jpeg") no-repeat center/cover;
-  height: 100vh;
-}
-
-#hero > img {
-  display: inline-block;
-  margin-top: 40vh;
-}
-
-#hello {
-  height: 100vh;
-  background: url("../img/bridge_1.jpg") no-repeat center/cover fixed;
-  font-family: "Special Elite", cursive;
-}
-
-#hello > article {
-  background: url("../img/beans_icon.png") no-repeat center/cover;
-  background-color: #fff;
-  height: 48vh;
-}
-
-#hello h1 {
-  margin: 0;
-  font-size: 4em;
-  padding-top: 12vh;
-  font-family: "Exo", sans-serif;
-}
-
-#hello p {
-  width: 40%;
-  font-size: 1.2em;
-}
-
-#menu {
-  background: url("../img/bridge_2.jpg") no-repeat center/cover fixed;
-  height: 150vh;
-}
-
-#menu article {
-  font-family: "Special Elite", cursive;
-  background: url("../img/beans_icon.png") no-repeat center/cover;
-  background-color: #fff;
-}
-
-#menu h2,
-h3,
-h4 {
-  font-family: "Exo", sans-serif;
-  text-align: center;
-}
-
-#menu article {
-  padding-bottom: 50px;
-}
-
-#menu div {
-  width: 45%;
-  border: 2px solid black;
-  margin: 0 auto 20px auto;
-  text-align: center;
-  padding: 8px;
-}
-
-#menu h2 {
-  margin: 0;
-  padding-top: 5vh;
-  font-size: 4em;
-}
-
-#menu h3,
-#story h2,
-#catering h2,
-#cakes h2,
-footer h2 {
-  font-size: 3em;
-  font-family: "Exo", sans-serif;
-}
-#menu h4 {
-  font-size: 2em;
-  margin: 5px 0;
-}
-#menu > article > div > p,
-#story p,
-#catering p,
-#cakes p {
-  font-size: 1.5em;
-}
-
-#menu a {
-  display: block;
-  text-align: center;
-}
-
-#menu span {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 10px auto 3px auto;
-}
-
-#menu img {
-  width: 100%;
-  height: 100%;
-}
-
-#menu > article > p {
-  margin: 0;
-}
-
-#story {
-  background: url("../img/bridge_3.jpg") no-repeat center/cover fixed;
-  height: 100vh;
-  font-family: "Special Elite", cursive;
-}
-
-#story article,
-#catering article,
-#cakes article {
-  padding: 0;
-  display: flex;
-  background-color: #fff;
-}
-
-#story aside,
-#catering aside,
-#cakes aside {
-  width: 50vw;
-  position: relative;
-}
-
-#story aside > img {
-  width: 70%;
-  height: 60%;
-  position: absolute;
-  left: 0;
-  bottom: 18%;
-}
-
-#catering aside > img {
-  width: 70%;
-  height: 60%;
-  position: absolute;
-  bottom: 14%;
-  right: -25%;
-}
-
-#story aside:nth-of-type(1),
-#catering aside:nth-of-type(2) {
-  padding: 5% 15%;
-}
-
-#catering {
-  background: url("../img/bridge_4.jpeg") no-repeat center/cover fixed;
-  height: 100vh;
-  font-family: "Special Elite", cursive;
-}
-
-#catering article {
-  background: url("../img/pie_icon.png") no-repeat right;
-  background-color: #fff;
-  background-size: 25% 70%;
-}
-
-#catering a,
-#cakes a {
-  border: 2px solid black;
-  padding: 5px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-#cakes article {
-  background: url("../img/muffin_icon.png") no-repeat left;
-  font-family: "Special Elite", cursive;
-  background-size: 30% 70%;
+  background-color: #efe8d7;
   padding-bottom: 10%;
 }
 
-#cakes aside > img {
-  width: 90%;
-  height: 90%;
+#hero > h1:nth-of-type(1) {
+  padding-top: 5%;
 }
 
-#cakes aside:nth-of-type(2) {
-  padding: 10% 20% 0 5%;
-  text-align: left;
-}
-#cakes aside:nth-of-type(1) {
-  text-align: right;
-  padding-left: 20%;
-  padding-top: 11%;
-}
-
-footer {
-  background-color: #000;
-  color: #fff;
-}
-
-footer > span {
-  display: block;
+#hero > h1,
+#hero > h2 {
   text-align: center;
+  border-bottom: 1px solid #002a5a;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 8em;
 }
 
-footer > span:not(footer > span:nth-of-type(3)) img {
-  width: 30px;
-  height: 30px;
+#hero > div {
+  margin: 5% auto 0 auto;
+  width: 30%;
 }
 
-footer p {
-  font-family: "Special Elite", cursive;
-  text-align: center;
-  font-size: 1.2em;
+#hero img {
+  width: 100%;
 }
 
-footer h2 {
-  padding-top: 30px;
-  text-align: center;
-}
-
-footer span:last-of-type img {
-  width: 100px;
-  height: 30px;
+#hero span {
+  font-weight: bold;
 }
